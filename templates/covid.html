@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+	<title>COVID TRACKER</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdn.bootcss.com/typed.js/1.1.4/typed.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../static/css/style.css">
+</head>
+<body background="../static/images/bg.jpg"></body>
+<center><h1 class="title-bar">COVID TRACKER</h1></center>
+<hr/>
+<br/><br/><br/><br/><br/>
+	<div style="text-align: center;">
+		<div class="text-div">
+			<br/>
+			<p>Enter the country name and get the covid details.</p>
+
+			<br/>
+		</div>
+		<div class="submit-box" >
+			<br/>
+			<span class="write"></span>
+			<script type="text/javascript">
+							$(function(){
+						        $(".write").typed({
+						            strings: ["Enter the Country name", "Example US", "And click on Submit!"],
+						            typeSpeed: 100,
+						            backDelay: 2000, // pause before backspacing
+						            loop: !0, // here
+						    		startDelay: 1000,
+						        });
+						    });
+						</script>
+			<br/>
+			
+			<div style="border: 20px; border-radius: 20px;">
+				<form method="post" action= "/process">
+                        <label style="color:aliceblue"> Enter the country name: <input type="text" name="country" size="20" ></label> <br/> <br/>
+                        <input type="submit" name ="submit">
+                </form>
+
+			</div>
+		</div>
+</div>
+</body>
+</html>
