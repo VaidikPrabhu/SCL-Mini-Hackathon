@@ -28,9 +28,5 @@ def process():
     return render_template('covid_result.html', confirmed=confirmed,active=active,recovered=recovered,deaths=deaths,country=country1)
 
 
-
-
-
 if __name__ == '__main__':
-	# Remove "debug = True" when deployed in production 
-    app.run(debug = True)
+    app.run()
